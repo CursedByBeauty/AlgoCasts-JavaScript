@@ -32,10 +32,10 @@
 // }
 // reverse('hello')
 
-function reverse(str) {
-    return str.split('').reduce((rev, char) => char + rev, '');
-  }
-reverse('hello')
+// function reverse(str) {
+//     return str.split('').reduce((rev, char) => char + rev, '');
+//   }
+// reverse('hello')
 
 // function reverse(str){
 //     if(!str || typeof str != 'string' || str.length < 2 ) return str;
@@ -48,5 +48,8 @@ reverse('hello')
 //     return backwards.join('');
 //   }
 //   reverse('hello')
+
+reverse = str => [...str].reverse().join('');
+reverse('hello')
 
 module.exports = reverse;
